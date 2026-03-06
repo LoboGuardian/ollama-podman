@@ -1,0 +1,5 @@
+[phases.setup]
+nixPkgs = ["ollama"]
+
+[start]
+cmd = "OLLAMA_HOST=0.0.0.0:${PORT:-11434} ollama serve"
